@@ -30,11 +30,11 @@ public class ReviewRepository {
         }
     }
 
-    public Review findOneReview(long id) {
+    public Review findOne(long id) {
         return reviewList.get(id);
     }
 
-    public Collection<Review> findAllReviews() {
+    public Collection<Review> findAll() {
         return reviewList.values();
     }
 
