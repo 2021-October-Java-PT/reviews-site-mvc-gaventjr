@@ -11,7 +11,7 @@ import java.util.Collection;
 public class ReviewRepository {
     Map<Long, Review> reviewList = new HashMap<>();
 
-        Review Dragoon = new Review(1l, "The Legend of Dragoon","", "RPG", "");
+        Review Dragoon = new Review(1l, "The Legend of Dragoon","", "RPG", "One of my favorite Rpgs(Role-Playing games of all time! With an action combat system that keeps you on your toes, and a difficult fnal boss");
         Review Trigger = new Review(2l, "Chrono Trigger","", "RPG", "");
         Review War = new Review(3l, "God of War","i", "Action/Adventure", "");
         Review Borderlands = new Review(4l, "Borderlands 2","", "Shooter", "");
