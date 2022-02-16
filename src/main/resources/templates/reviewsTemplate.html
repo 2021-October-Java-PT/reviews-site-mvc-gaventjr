@@ -1,19 +1,28 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://thymeleaf.org">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title> Reviews</title>
-
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <title>Games</title>
 </head>
 <body>
+<div class="container">
+  <main>
+    <h1>My Favorite games</h1>
+    <figure>
+<!--      <img th:src="" />-->
+    </figure>
+    <section>
+      <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
 
-<header>
-    <h1> Favorite Games of Mine</h1>
-</header>
-<main>
-    <ul th:each="reviews: ${reviewModel}">
-        <li><a th:href="@{/reviews/{id}(id=${reviews.id})}" th:text="${reviews.name}">X</a></li>
-    </ul>
-</main>
-
+      <button>
+        <a th:href="@{/reviews}">Reviews </a>
+      </button>
+    </section>
+  </main>
+  <footer>
+    <small>George Avent Jr.</small>
+  </footer>
+</div>
 </body>
 </html>

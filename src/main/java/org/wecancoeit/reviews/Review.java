@@ -10,7 +10,7 @@ public class Review {
 @GeneratedValue
 
     private Long id;
-    private String title;
+    private String name;
     private String image;
     private String reviewType;
     private String description;
@@ -21,8 +21,8 @@ public class Review {
         return id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
     public String getImage() {
@@ -37,9 +37,9 @@ public class Review {
         return description;
     }
 
-    public Review(long id, String title, String image, String reviewType, String description) {
+    public Review(long id, String name, String image, String reviewType, String description) {
         this.id = id;
-        this.title = title;
+        this.name = name;
         this.image = image;
         this.reviewType = reviewType;
         this.description = description;
