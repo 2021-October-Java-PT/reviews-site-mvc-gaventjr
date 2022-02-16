@@ -9,14 +9,12 @@
       <h1 th:text="${reviewModel.name}">A review</h1>
     </header>
     <main>
-      <ul>
-        <li th:each="review: ${reviewsModel}">
-          <a
-            th:href="@{/review(id=${review.id})}"
-            th:text="${review.description}"
-          ></a>
-        </li>
-      </ul>
+    <img th:src="${reviewModel.image}">
+     <ul>
+             <li th:text="${reviewModel.description}"></li>
+             <li th:text="${reviewModel.reviewType}"></li>
+
+         </ul>
     </main>
   </body>
 </html>
